@@ -990,9 +990,681 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/13/前端面试题/coding-questions/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hwlv">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/13/前端面试题/coding-questions/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-13T23:21:32+08:00">
+                2018-10-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Coding-Questions"><a href="#Coding-Questions" class="headerlink" title="Coding Questions:"></a>Coding Questions:</h1><p><em>Question: What is the value of <code>foo</code>?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = <span class="number">10</span> + <span class="string">'20'</span>;</span><br></pre></td></tr></table></figure></p>
+<p><em>Question: What will be the output of the code below?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="number">0.1</span> + <span class="number">0.2</span> == <span class="number">0.3</span>);</span><br></pre></td></tr></table></figure></p>
+<p><em>Question: How would you make this work?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">add(<span class="number">2</span>, <span class="number">5</span>); <span class="comment">// 7</span></span><br><span class="line">add(<span class="number">2</span>)(<span class="number">5</span>); <span class="comment">// 7</span></span><br></pre></td></tr></table></figure></p>
+<p><em>Question: What value is returned from the following statement?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"i'm a lasagna hog"</span>.split(<span class="string">""</span>).reverse().join(<span class="string">""</span>);</span><br></pre></td></tr></table></figure></p>
+<p><em>Question: What is the value of <code>window.foo</code>?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">( <span class="built_in">window</span>.foo || ( <span class="built_in">window</span>.foo = <span class="string">"bar"</span> ) );</span><br></pre></td></tr></table></figure></p>
+<p><em>Question: What is the outcome of the two alerts below?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = <span class="string">"Hello"</span>;</span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> bar = <span class="string">" World"</span>;</span><br><span class="line">  alert(foo + bar);</span><br><span class="line">&#125;)();</span><br><span class="line">alert(foo + bar);</span><br></pre></td></tr></table></figure></p>
+<p><em>Question: What is the value of <code>foo.length</code>?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = [];</span><br><span class="line">foo.push(<span class="number">1</span>);</span><br><span class="line">foo.push(<span class="number">2</span>);</span><br></pre></td></tr></table></figure></p>
+<p><em>Question: What is the value of <code>foo.x</code>?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = &#123;<span class="attr">n</span>: <span class="number">1</span>&#125;;</span><br><span class="line"><span class="keyword">var</span> bar = foo;</span><br><span class="line">foo.x = foo = &#123;<span class="attr">n</span>: <span class="number">2</span>&#125;;</span><br></pre></td></tr></table></figure></p>
+<p><em>Question: What does the following code print?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">'one'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'two'</span>);</span><br><span class="line">&#125;, <span class="number">0</span>);</span><br><span class="line"><span class="built_in">Promise</span>.resolve().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'three'</span>);</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'four'</span>);</span><br></pre></td></tr></table></figure></p>
+<p><em>Question: What is the difference between these four promises?</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">doSomething().then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> doSomethingElse();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">doSomething().then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  doSomethingElse();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">doSomething().then(doSomethingElse());</span><br><span class="line"></span><br><span class="line">doSomething().then(doSomethingElse);</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/13/前端面试题/css-questions/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hwlv">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/13/前端面试题/css-questions/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-13T23:21:32+08:00">
+                2018-10-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="CSS-Questions"><a href="#CSS-Questions" class="headerlink" title="CSS Questions:"></a>CSS Questions:</h1><ul>
+<li>What is CSS selector specificity and how does it work?</li>
+<li>What’s the difference between “resetting” and “normalizing” CSS? Which would you choose, and why?</li>
+<li>Describe Floats and how they work.</li>
+<li>Describe z-index and how stacking context is formed.</li>
+<li>Describe BFC (Block Formatting Context) and how it works.</li>
+<li>What are the various clearing techniques and which is appropriate for what context?</li>
+<li>How would you approach fixing browser-specific styling issues?</li>
+<li>How do you serve your pages for feature-constrained browsers?<ul>
+<li>What techniques/processes do you use?</li>
+</ul>
+</li>
+<li>What are the different ways to visually hide content (and make it available only for screen readers)?</li>
+<li>Have you ever used a grid system, and if so, what do you prefer?</li>
+<li>Have you used or implemented media queries or mobile specific layouts/CSS?</li>
+<li>Are you familiar with styling SVG?</li>
+<li>Can you give an example of an <code>@media</code> property other than <code>screen</code>?</li>
+<li>What are some of the “gotchas” for writing efficient CSS?</li>
+<li>What are the advantages/disadvantages of using CSS preprocessors?<ul>
+<li>Describe what you like and dislike about the CSS preprocessors you have used.</li>
+</ul>
+</li>
+<li>How would you implement a web design comp that uses non-standard fonts?</li>
+<li>Explain how a browser determines what elements match a CSS selector.</li>
+<li>Describe pseudo-elements and discuss what they are used for.</li>
+<li>Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.</li>
+<li>What does <code>* { box-sizing: border-box; }</code> do? What are its advantages?</li>
+<li>What is the CSS <code>display</code> property and can you give a few examples of its use?</li>
+<li>What’s the difference between inline and inline-block?</li>
+<li>What’s the difference between the “nth-of-type()” and “nth-child()” selectors?</li>
+<li>What’s the difference between a relative, fixed, absolute and statically positioned element?</li>
+<li>What existing CSS frameworks have you used locally, or in production? How would you change/improve them?</li>
+<li>Have you played around with the new CSS Flexbox or Grid specs?</li>
+<li>Can you explain the difference between coding a web site to be responsive versus using a mobile-first strategy?</li>
+<li>Have you ever worked with retina graphics? If so, when and what techniques did you use?</li>
+<li>Is there any reason you’d want to use <code>translate()</code> instead of <em>absolute positioning</em>, or vice-versa? And why?</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/13/前端面试题/performance-questions/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hwlv">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/13/前端面试题/performance-questions/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-13T23:21:32+08:00">
+                2018-10-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Performance-Questions"><a href="#Performance-Questions" class="headerlink" title="Performance Questions:"></a>Performance Questions:</h1><ul>
+<li>What tools would you use to find a performance bug in your code?</li>
+<li>What are some ways you may improve your website’s scrolling performance?</li>
+<li>Explain the difference between layout, painting and compositing.</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/13/前端面试题/fun-questions/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hwlv">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/13/前端面试题/fun-questions/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-13T23:21:32+08:00">
+                2018-10-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Fun-Questions"><a href="#Fun-Questions" class="headerlink" title="Fun Questions:"></a>Fun Questions:</h1><ul>
+<li>What’s a cool project that you’ve recently worked on?</li>
+<li>What are some things you like about the developer tools you use?</li>
+<li>Who inspires you in the front-end community?</li>
+<li>Do you have any pet projects? What kind?</li>
+<li>What’s your favorite feature of Internet Explorer?</li>
+<li>How do you like your coffee?</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/13/前端面试题/html-questions/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hwlv">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/13/前端面试题/html-questions/" itemprop="url">Untitled</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-13T23:21:32+08:00">
+                2018-10-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="HTML-Questions"><a href="#HTML-Questions" class="headerlink" title="HTML Questions:"></a>HTML Questions:</h1><ul>
+<li>What does a <code>doctype</code> do?</li>
+<li>How do you serve a page with content in multiple languages?</li>
+<li>What kind of things must you be wary of when design or developing for multilingual sites?</li>
+<li>What are <code>data-</code> attributes good for?</li>
+<li>Consider HTML5 as an open web platform. What are the building blocks of HTML5?</li>
+<li>Describe the difference between a <code>cookie</code>, <code>sessionStorage</code> and <code>localStorage</code>.</li>
+<li>Describe the difference between <code>&lt;script&gt;</code>, <code>&lt;script async&gt;</code> and <code>&lt;script defer&gt;</code>.</li>
+<li>Why is it generally a good idea to position CSS <code>&lt;link&gt;</code>s between <code>&lt;head&gt;&lt;/head&gt;</code> and JS <code>&lt;script&gt;</code>s just before <code>&lt;/body&gt;</code>? Do you know any exceptions?</li>
+<li>What is progressive rendering?</li>
+<li>Why you would use a <code>srcset</code> attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.</li>
+<li>Have you used different HTML templating languages before?</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1036,7 +1708,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
